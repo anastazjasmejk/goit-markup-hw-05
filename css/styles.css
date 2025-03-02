@@ -1,3 +1,4 @@
+/*  #region extra */
 a {
   text-decoration: none;
 }
@@ -29,7 +30,9 @@ body {
 img {
   display: block;
 }
-/* region header */
+/*  #endregion extra */
+
+/* #region header */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -130,8 +133,8 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-/* end region header */
-/* region 1 */
+/* #endregion header */
+/* #region 1 */
 
 .sec-main {
   background-color: #2e2f42;
@@ -189,8 +192,8 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
-/* end region 1 */
-/* region 2 */
+/* #endregion 1 */
+/* #region 2 */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -241,9 +244,9 @@ img {
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
 }
-/*end region 2 */
+/* #endregion 2 */
 
-/* redion 3  */
+/* #region 3  */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -333,9 +336,9 @@ img {
 .social-icon {
   fill: #f4f4fd;
 }
-/*  end redion 3 */
+/*  #endregion 3 */
 
-/* region 4 */
+/* #region 4 */
 
 .portfolio-section {
   padding-top: 120px;
@@ -413,9 +416,9 @@ img {
   padding-bottom: 32px;
   padding-left: 16px;
 }
-/* end region 4  */
+/* #endregion 4  */
 
-/* region footer */
+/* #region footer */
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -481,4 +484,4 @@ img {
   margin-right: 120px;
 }
 
-/* end region footer */
+/* #endregion footer */
