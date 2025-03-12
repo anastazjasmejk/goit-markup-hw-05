@@ -475,6 +475,7 @@ img {
   background-color: #31d0aa;
 }
 .sotial-icon {
+  margin-left: 16px;
   fill: #f4f4fd;
 }
 .container-footer {
@@ -497,7 +498,7 @@ img {
 }
 .subscribe-form {
   display: flex;
-  gap: 16px;
+  gap: 24px;
 }
 .subscribe-label {
   display: block;
@@ -510,11 +511,19 @@ img {
   border: 1px solid #ffffff;
   background-color: transparent;
   color: #ffffff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .subscribe-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe-button {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 165px;
   display: flex;
   align-items: center;
   gap: 8px;
