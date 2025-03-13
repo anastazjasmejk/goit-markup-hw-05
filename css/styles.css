@@ -652,6 +652,9 @@ img {
   border-width: 2px;
   outline: none;
 }
+.inpt-icon:focus {
+  border-color: #4d5ae5;
+}
 
 .btn-modal-comment {
   margin-bottom: 16px;
