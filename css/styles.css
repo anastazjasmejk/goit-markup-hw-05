@@ -648,7 +648,6 @@ img {
 }
 
 .inpt-icon:focus + .iconname {
-  fill: #4d5ae5;
   border-color: #4d5ae5;
   border-width: 2px;
   outline: none;
