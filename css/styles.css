@@ -557,12 +557,22 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*Modal*/
-.modal {
-  padding: 72px 24px 24px 24px;
+.style-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window {
+  position: absolute;
   top: 50%;
   left: 50%;
-  position: absolute;
+  transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
@@ -570,11 +580,10 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translate(-50%, -50%);
+  padding: 72px 24px 24px 24px;
 }
 
-/*Close Button*/
-.close-button {
+.style-modal-bt {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -587,47 +596,42 @@ img {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button:focus {
+.style-modal-bt:hover {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
 }
 
-.close-button:hover {
+.style-modal-bt:focus {
   background-color: #404bbf;
   border: none;
-  outline: none;
   fill: #ffffff;
 }
 
-.close-btn-icon {
+.style-modal-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*Modal Text*/
-.modal-text {
+.style-window-p {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 16px;
 }
 
-/*Modal Form*/
-.modal-form {
-  margin-bottom: 16px;
-}
-
-.modal-ddv {
+.style-form-div {
   margin-bottom: 8px;
 }
 
-.modal-name {
+.style-label-form {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -636,12 +640,11 @@ img {
   margin-bottom: 4px;
 }
 
-.container-icon {
+.style-input-div {
   position: relative;
 }
 
-.inpt-icon,
-.inpt-icon-1 {
+.style-div-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -652,13 +655,11 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.inpt-icon:focus,
-.inpt-icon-1:focus {
+.style-div-input:focus {
   border-color: #4d5ae5;
 }
 
-/*SVG Icon*/
-.iconname {
+.style-svg-div {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -666,8 +667,15 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*Text Area*/
-.textarea-main {
+.style-svg-div:focus {
+  fill: #4d5ae5;
+}
+
+.style-div-form {
+  margin-bottom: 16px;
+}
+
+.style-textarea-label {
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -683,16 +691,15 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-main:focus {
+.style-textarea-label:focus {
   border-color: #4d5ae5;
 }
 
-/*Checkbox*/
-.checkbx {
+.style-form-label {
   margin-bottom: 24px;
 }
 
-.modal-checkbox {
+.style-label-div {
   font-weight: 400;
   font-size: 12px;
   line-height: 117%;
@@ -701,7 +708,7 @@ img {
   user-select: none;
 }
 
-.modal-span {
+.style-span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -717,20 +724,19 @@ img {
   fill: transparent;
 }
 
-.icon-check {
+.style-svg-span {
   border: none;
   fill: #f4f4fd;
 }
 
-.privacy-link {
+.style-a-label {
   line-height: 133%;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
 
-/*Submit Button*/
-.btn-submit {
+.style-bt-div {
   display: block;
   margin: 0 auto;
   cursor: pointer;
@@ -741,15 +747,28 @@ img {
   line-height: 150%;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #ffffff;
-  background: #4d5ae5;
-  border-radius: 4px;
+  color: #fff;
+  background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: none;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  padding: 16px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-submit:hover {
-  background: #404bbf;
+.checkbox:checked + .style-label-div .style-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
+.style-div-input:focus + .style-svg-div,
+.style-div-input:hover + .style-svg-div {
+  fill: #4d5ae5;
+}
+
+.style-div-input:focus,
+.style-div-input:hover {
+  fill: #4d5ae5;
+}
 /* #endregion backdrop */
